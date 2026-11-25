@@ -2560,7 +2560,7 @@ function route(){
   const v = VIEWS.includes(h) ? h : "accueil";
   $$(".view").forEach(el => el.classList.toggle("on", el.dataset.view === v));
   $$(".nav a").forEach(a => a.getAttribute("href") === "#" + v ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
-  document.title = (TITLES[v] ? TITLES[v] + " · " : "") + "Clinique Juridique Paris 8";
+  document.title = TITLES[v] ? TITLES[v] + " · Clinique Juridique Paris 8" : "Clinique Juridique Paris 8 · Aide juridique gratuite à Saint-Denis et en Île-de-France";
   if (v === "orientation" && pendingDom){ $("#f-dom").value = pendingDom; pendingDom = ""; }
   closeDrawer();
   window.scrollTo({top: 0, behavior: "instant"});
