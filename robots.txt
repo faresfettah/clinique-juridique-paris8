@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clinique-juridique-paris8.netlify.app/sitemap.xml
